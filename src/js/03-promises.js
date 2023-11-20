@@ -12,20 +12,6 @@ refs.inputNameEl.addEventListener('blur', onBlurName);
 
 setPlaceholder();
 
-function onFocusName() {
-  refs.inputNameEl.value = '';
-}
-
-function onBlurName() {
-  if (refs.inputNameEl.value === '') {
-    refs.inputNameEl.value = 'Noname';
-  }
-}
-
-function setPlaceholder() {
-  refs.inputNameEl.value = 'Noname';
-}
-
 function createPromise(position, delay) {
   return new Promise((resolve, reject) => {
     const shouldResolve = Math.random() > 0.3;
